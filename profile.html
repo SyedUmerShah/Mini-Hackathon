@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid my-nav">
+            <a class="navbar-brand" href="#">Personal Blogging App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul> -->
+                <form class="d-flex ms-auto" role="search">
+
+                    <div id="back-btn" class="btn-background"> <a href="home.html"><img width="30px" src="images/left-arrow.png"
+                                alt=""></a></div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container container1">
+        <div class="profile-box">
+            <div class="profile-pic-par">
+                <div class="profile-pic-child">
+                    <img id="profile-pic" class="profile-pic" src="" alt="">
+                   <label for="file"> <img class="cam-icon" src="images/photo-camera.png" alt=""></label>
+                    <input style="display: none;" id="file" type="file">
+                </div>
+            </div>
+            <center><button id="update-pic-btn">Update Pic</button></center>
+            <div class="details-par">
+                <div class="details-child">
+                    <div class="username">
+                        <input id="name" value="" readonly type="text">
+                        <img id="name-btn" src="images/pencil.png" alt="">
+                    </div>
+                    <h5>Password</h5>
+                    <div class="password">
+                        <center>
+                            <input id="old-pass" placeholder="Old Password" type="password">
+                            <p id="o-p-e"></p>
+                            <input id="new-pass" placeholder="New Password" type="password">
+                            <input id="repeat-pass" placeholder="Repeat Password" type="password">
+                            <p id="r-p-e"></p>
+                            <button disabled id="update-btn">Update Password</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

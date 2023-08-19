@@ -1,0 +1,272 @@
+/* auth */
+.auth-div {
+    height: 100vh;
+}
+
+.form-div {
+    width: 500px;
+    height: fit-content;
+    min-height: 500px;
+    box-shadow: rgb(0, 0, 0) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+@media screen and (max-width:400px) {
+    .form-div {
+        height: fit-content;
+        min-height: 450px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:450px) {
+    .form {
+        width: 300px;
+    }
+}
+
+.auth-button {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    border: none;
+}
+
+.auth-button:hover {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0.518) 100%);
+}
+
+.auth-button:active {
+    background: rgb(0, 0, 0) !important;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) !important;
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+.signup-login {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.signup-login:hover {
+    text-decoration: underline
+}
+
+.signup-login:active {
+    text-decoration: underline
+}
+
+/* profile */
+.navbar {
+    background-color: #884dc2 !important;
+}
+
+.btn-background {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.profile-box {
+    /* border: 2px solid blue; */
+    height: 500px;
+    width: 400px;
+}
+
+.profile-pic-par {
+    /* border: 2px solid green; */
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic-child {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* border: 2px solid yellow; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.cam-icon {
+    position: absolute;
+    width: 35px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.cam-icon:hover {
+    cursor: pointer;
+}
+
+#update-pic-btn {
+    background-color: #884dc2;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    padding: 5px;
+    border: none;
+}
+
+.details-child {
+    margin-top: 20px;
+}
+
+.details-child h5 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.username input {
+    width: 90%;
+    padding: 6px;
+    /* border-radius: 25px; */
+    border: none;
+    border-bottom: 1px #884dc2;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.username img {
+    width: 9%;
+}
+
+.username img:hover {
+    cursor: pointer;
+}
+
+.password input {
+
+    width: 90%;
+    padding: 6px;
+    /* border-radius: 25px; */
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.password input:focus {
+    border-bottom-color: #884dc2;
+}
+
+.password button {
+    background-color: #884dc2;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 150px;
+    border: none;
+}
+
+.password button :hover {
+    opacity: 0.8;
+}
+
+.post-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #884dc2;
+}
+
+.post-text input {
+    width: 80%;
+    height: 50px;
+}
+
+.post-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-body textarea {
+    width: 80%;
+    resize: none;
+}
+
+
+#logout {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px;
+    width: 90px;
+    border-radius: 15px;
+}
+
+#profile-btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px;
+    width: 90px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+#post-btn {
+    background-color: #884dc2;
+    color: white;
+    margin-left: 112px;
+    width: 100px;
+    border: none;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+
+
+.blogs-head {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border: 1px solid;
+}
+
+.blogs-head img {
+    width: 65px;
+}
+
+.blogs-body {
+    border: 1px solid;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 20px;
+}
